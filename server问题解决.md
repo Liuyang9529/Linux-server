@@ -2,6 +2,10 @@
 
 如果server出现问题，则可以从以下角度来考虑问题：
 
+172服务器的路径：/home/web/public/htdocs/projects/PremPS/prj-sunddg/static/PDB_model/
+
+
+
 以PremPS为例，运行server计算的脚本如下所示：
 ```
 /usr/local/bin/python change_1.py 2023111405102320979361759 >2023111405102320979361759/change_debug.txt 2>&1
@@ -23,7 +27,7 @@ python PremPS.py -i 2023111405102320979361759 >2023111405102320979361759/debug.t
 
 如：ddg值无法计算等
 
-需要在152服务器上debug
+需要在153服务器上debug
 
 先su premps 再输入密码web2017
 
