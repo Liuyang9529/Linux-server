@@ -83,6 +83,39 @@ su mutabind
 
 再去找哪一个哪一行没运行，直接运行即可。
 
+----------------------------------------------------------------------------------------------------------------
+
+# 设置了一个检查数据库能否连接的程序
+
+```
+def SEND(s):
+    my_sender='925201392@qq.com'    # 发件人邮箱账号
+    my_pass = 'yizvpdduyjrrbbhj'              # 发件人邮箱密码
+    my_user=['20234221090@stu.suda.edu.cn']#,'minghui.li.2016@outlook.com']
+
+    msg=MIMEText(s,'plain','utf-8')
+    msg['From']=formataddr(["From liuyang",my_sender])
+    msg['To']=formataddr(["Server Problem:",', '.join(my_user)])
+    msg['Subject']="There may be a problem with Mutabind2!"
+
+    server=smtplib.SMTP_SSL("smtp.qq.com", 465)
+    login = server.login(my_sender, my_pass)
+    assert login[1]==b'Authentication successful','login failed!'
+
+    server.sendmail(my_sender,my_user,msg.as_string())
+    server.quit()
+```
+
+在mutabind2的CollectResultsAndEmail.py中有连接数据库的try，except
+
+设置如果数据库连接不成功，则给老师和我发邮件。
+
+
+
+
+
+
+
 
 
 
