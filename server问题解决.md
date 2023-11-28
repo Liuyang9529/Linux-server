@@ -115,7 +115,7 @@ def SEND(s):
 su到每个server的路径下，将这个函数添加到检查数据库的方法中
 
 
-
+注意：prempdi的用户是webservice
 
 
 
