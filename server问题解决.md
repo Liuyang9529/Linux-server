@@ -117,5 +117,14 @@ su到每个server的路径下，将这个函数添加到检查数据库的方法
 
 注意：prempdi的用户是webservice
 
+生成每个jobid的sh的脚本
+```
+vim croncommand.sh 
 
+vim dbman.py
+```
+
+有的需要在这里修改python的版本
+
+/home/webservice/anaconda2/bin/python
 
