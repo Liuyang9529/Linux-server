@@ -33,8 +33,10 @@ su - liuyang
 ```
 
 (5) 查看docker组里有哪些用户
-getent group docker
 
+```
+getent group docker
+```
 
 
 
