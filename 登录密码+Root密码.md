@@ -41,5 +41,5 @@ qazxsw
 
 ```
 ssh web@10.20.212.172
-Ligroup#220706
+qazxsw123
 ```
