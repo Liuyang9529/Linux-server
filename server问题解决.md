@@ -143,6 +143,7 @@ https://github.com/harryjubb/arpeggio/blob/master/README.md#biopythonopenbabel-a
 arpeggio官方建议：删除多余的原子
 
 
+![f78d377fa4b2247c25e6a099c49c240](https://github.com/Liuyang9529/Linux-server/assets/114282960/99275568-e368-43ac-b3c2-936940e74d85)
 
 
 
