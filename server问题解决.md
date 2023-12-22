@@ -128,3 +128,26 @@ vim dbman.py
 
 /home/webservice/anaconda2/bin/python
 
+
+
+--------------------------------------------------------------------------------------------------------------
+
+# arpeggio失败问题
+
+参考：https://github.com/harryjubb/arpeggio/issues/7
+
+https://github.com/harryjubb/arpeggio/blob/master/README.md#biopythonopenbabel-are-complaining-about-my-structure-whats-happening
+
+问题：因为要输入arpeggio、openbabel和Biopython的蛋白质中，在同一个残基上，不能有两个相同的原子（或者说一个原子不能有两个相同坐标）
+
+arpeggio官方建议：删除多余的原子
+
+
+
+
+
+
+
+
+
+
