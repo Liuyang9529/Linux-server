@@ -147,8 +147,34 @@ arpeggio官方建议：删除多余的原子
 
 
 
+-----------------------------------------------------------------------------------------------------------------
+
+# prempri上传不了文件的问题
+得去172的前端去看
+
+## 第一步要先检查172服务器是否收到了get或者post申请
+通过172上的nginx来查看是否收到了申请
+
+nginx的配置文件路径： /usr/local/nginx/conf/nginx.conf
+
+在配置文件中找到 access_log /data/wwwlogs/access_nginx.log combined;
+
+这个路径即为nginx中记录的server访问情况的文件位置
 
 
+通过 grep 'save_mutations' access_nginx.log
+
+查看是否有save_mutations函数的请求（根据下面views.py中出问题的函数来查看问题）
+
+
+## 第二步：去后端查看
+路径： /home/web/public/data/projects/PremPRI/prj-sunddg/sunddg
+
+先从urls.py中查看是哪一步出问题，再确定对应的函数
+
+再去views.py查看对应函数的问题
+
+![image](https://github.com/Liuyang9529/Linux-server/assets/114282960/99f0b192-8798-444d-acdf-e0e7f6a09e35)
 
 
 
