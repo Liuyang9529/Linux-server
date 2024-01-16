@@ -168,6 +168,12 @@ nginx的配置文件路径： /usr/local/nginx/conf/nginx.conf
 
 
 ## 第二步：去后端查看
+
+先在server上提交文件后，右击，检查，Network，点击preserve log保持不变，然后查看执行的url，是save_mutations
+
+![image](https://github.com/Liuyang9529/Linux-server/assets/114282960/647fe54f-f677-4e94-a1ff-54512afbb058)
+
+
 路径： /home/web/public/data/projects/PremPRI/prj-sunddg/sunddg
 
 先从urls.py中查看是哪一步出问题，再确定对应的函数
