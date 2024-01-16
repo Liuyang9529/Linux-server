@@ -176,7 +176,7 @@ nginx的配置文件路径： /usr/local/nginx/conf/nginx.conf
 
 路径： /home/web/public/data/projects/PremPRI/prj-sunddg/sunddg
 
-先从urls.py中查看是哪一步出问题，再确定对应的函数
+再去urls.py中查看出问题的是哪一个url，再确定对应的函数
 
 再去views.py查看对应函数的问题
 
